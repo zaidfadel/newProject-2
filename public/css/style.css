@@ -58,3 +58,12 @@ body {
   background-color: rgba(226, 160, 226, 0.26);
   opacity: 50%;
 }
+.navbar-fixed{
+  display:block;
+  overflow:auto;
+}
+
+#navbar-font{
+
+display:inline-block;
+}

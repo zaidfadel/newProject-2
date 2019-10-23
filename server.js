@@ -5,7 +5,7 @@ var methodOverride = require('method-override');
 var initializePassport = require('./passport-config');
 var bcrpt = require('bcrypt');
 // Open Server
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8081;
 var app = express();
 app.use(express.static('public'));
 // app.use(express.static('public'));
