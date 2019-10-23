@@ -20,7 +20,7 @@ body{
   }
 
 
-  table {
+  /* table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -34,10 +34,11 @@ body{
   
   tr:nth-child(even) {
     background-color: #dddddd;
-  }
+  } */
 
-body {
+#index-banner {
   background-image: url('https://f1.media.brightcove.com/7/1578086878/1578086878_6093482616001_6093241744001-vs.jpg?pubId=1578086878&videoId=6093241744001');
+  padding: 20px 0;
 }
 
 
@@ -53,6 +54,13 @@ body {
 .search-bar {
   opacity: .5;
 }
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.img{
+ 
+  height: 100px;
 
 #search{
   background-color: rgba(226, 160, 226, 0.26);

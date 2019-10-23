@@ -1,7 +1,12 @@
 CREATE database `top_vehicle`;
 
 
-USE `top_vehicle`;
+CREATE database top_vehicle2;
+
+USE top_vehicle2;
+
+
+
 
 CREATE TABLE cars (
   id INT NOT NULL AUTO_INCREMENT,
@@ -20,10 +25,11 @@ CREATE TABLE cars (
 
 CREATE TABLE info (
   info_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-
   comment VARCHAR(100) NULL,
-  Foreign KEY(info_id) references cars.id on DELETE CASCADE
+  carId INT,
+  FOREIGN KEY (carId) REFERENCES cars(id) ON DELETE CASCADE
 );
+
 
 CREATE TABLE user(
 id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,

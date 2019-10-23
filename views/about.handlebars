@@ -4,10 +4,11 @@
 <div class="container section scrollspy" id="themes">
     <div class="section">
         <div id="overflowTest">
+
             {{#each cars}}
 
 
-            <table class="striped">
+            <table >
                 <tr>
                     <td>
                         <img class="someClass" src="{{photo}}" width="400" height="400">
@@ -15,7 +16,7 @@
                       
                     </td>
                     <td>
-                        <table>
+                        <table class="striped">
                             <tr>
                                 <td>
                                     <p>model: {{model}} </p>
@@ -55,7 +56,7 @@
                             <tr>
                                 <td>
                                     <a class="waves-effect waves-light btn"
-                                        href="https://www.carmax.com/cars?search={{model}}">For Sales</a>
+                                        href="https://www.{{make}}.com/?search={{model}}">For Sales</a>
                                 </td>
 
                             </tr>
@@ -71,8 +72,10 @@
                 </td>
                 </tr>
 
-            </table>
-<form  action="/about/model" method="POST">
+            </table> 
+
+            {{comment}}
+<form  action="/add/comment" method="POST">
 
                              <div class="input-field col s6">
         <input name="comment" id="comment" type="text" class="validate">
