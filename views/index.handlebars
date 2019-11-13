@@ -52,94 +52,149 @@
   </div> --}}
 </div>
 </div> --}}
+{{!-- <h1 class="header center titleFont" style="color: #ec407a "> &nbsp &nbsp
+  &nbsp &nbsp
+  &nbsp &nbsp &nbsp &nbsp
+  &nbsp Materialize Themes</h1> --}}
 <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="https://www.galleschevy.com/static/dealer-5643/GAL-WS-1920X600-TM-equinox.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://di-uploads-pod11.dealerinspire.com/wildetoyota/uploads/2019/09/WT-W-Specials-0919-1.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://di-uploads-pod6.dealerinspire.com/galaxytoyota/uploads/2018/12/wewantyourtrade.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
-      
-    {{!-- <div class="parallax"><img src="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            alt="Unsplashed background img 2"
-            style="background-image: url(&quot;images/newpink.jpg&quot;); bottom: -342.162px; display: block;"> --}}
-        <div class="container section scrollspy " id="themes">
-            <div class="section">
+  <ul class="slides">
+    <li>
+      <img src="https://www.setaswall.com/wp-content/uploads/2017/04/Audi-Wallpaper-6-1920x1200.jpg">
+      <!-- random image -->
+      <div class="caption center-align">
+        <h3 style="color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue">Find Your Car Here</h3>
+        <h5 style="color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue" class="light grey-text text-lighten-3">with Premiere
+        </h5>
+      </div>
+    </li>
+    <li>
+      <img src="http://www.toyotaofseattle.com/blogs/2066/wp-content/uploads/2016/09/toyota-camry-2019.jpeg">
+      <!-- random image -->
+      <div class="caption left-align">
+        <h3 style="color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue">Like it? buy it For Free😁 </h3>
+        <h5 style="color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue" class="light grey-text text-lighten-3">With
+          Premiere.
+        </h5>
+      </div>
+    </li>
+    <li>
+      <img
+        src="https://di-uploads-pod17.dealerinspire.com/southdadetoyotaofhomestead/uploads/2017/05/best-toyota-lease-deals.jpg">
+      <!-- random image -->
+      <div class="caption right-align">
+        <h3 style="color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue">Scroll Down to see more Cars</h3>
+        <h5 style="color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue" class="light grey-text text-lighten-3">With
+          Premiere.
+        </h5>
+      </div>
+    </li>
+    <li>
+      <img
+        src="https://img.gaadicdn.com/images/carexteriorimages/930x620/Hyundai/Hyundai-Verna/5971/rear-right-side-48.jpg">
+      <!-- random image -->
+      <div class="caption center-align">
+        <h3 style="color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue">Enjoy With The New Cars</h3>
+        <h5 class="light grey-text text-lighten-3" style="color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue">With Premiere.</h5>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+<div class="container section scrollspy " id="themes">
+  <div class="section">
+    <br>
+    <br>
+    <br>
+
+    <nav>
+      <div class="nav-wrapper">
+        <form>
+          <div class="input-field #d50000 red accent-4">
+            <input id="search" type="search">
+            {{!-- <input id="myInput" type="text" placeholder="Search.."> --}}
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+
+    <div id="overflowTest">
+
+      <div class="myDIV">
+        <div class="row">
+          {{#each cars}}
+
+
+
+
+          <!--col-->
+
+          <br>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+
+                <a href="about/model/{{model}}"><img class="someClass" src="{{photo}}" width="200" height="150"></a>
+
+              </div>
+              <div class="card-content">
+                <span class=" card  grey-text text-darken-2 "><a href="about/model/{{model}}">{{model}}</a><i
+                    class=" right">seal $ {{fuelCost08}}</i></span>
                 <br>
-                <br>
-                <br>
-                <nav>
-                    <div class="nav-wrapper">
-                        <form>
-                            <div class="input-field #d50000 red accent-4">
-                                <input id="search" type="search">
-                                {{!-- <input id="myInput" type="text" placeholder="Search.."> --}}
-                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                                <i class="material-icons">close</i>
-                            </div>
-                        </form>
-                    </div>
-                </nav>
-                <div id="overflowTest">
-<div class="myDIV">
-    <div class="row">
-                    {{#each cars}}
-                    
-                        <!--col-->
-                        <br>
-                        <div class="col s12 m4">
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                   
-                                        <a href="about/model/{{model}}"><img class="someClass" src="{{photo}}"
-                                                    width="200" height="150"></a>
-                                   
-                                </div>
-                                <div class="card-content">
-                                    <span class=" card  grey-text text-darken-2 " ><a href="about/model/{{model}}">{{model}}</a><i
-                                            class="mdi-navigation-more-vert right">seal $ {{fuelCost08}}</i></span>
-                                    <br>
-                                </div>
-                                <div class="card-reveal">
+
+              </div>
+              {{!-- <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">seal $ {{fuelCost08}}<i
                                             class="mdi-navigation-close right">{{trany}}</i>
                                         <p>hjhjhjhjhjhjhjhjhj</p>
                                     </span>
-                                </div>
-                            </div>
-                            <!--card-->
-                        </div>
-                        <!--col-->
-                        <!--row-->
-                
-                    {{/each}}
-    </div>
-                    </div>
-                </div>
+
+
+                                </div> --}}
             </div>
+            <!--card-->
+          </div>
+          <!--col-->
+
+          <!--row-->
+
+
+          {{/each}}
         </div>
+
+      </div>
+    </div>
+  </div>
+  <!--card-->
+</div>
+<!--col-->
+<!--row-->
+<div id="index-banner" style="margin-bottom:%;">
+
+
+
+  <img
+    src="https://f1.media.brightcove.com/7/1578086878/1578086878_6093482616001_6093241744001-vs.jpg?pubId=1578086878&videoId=6093241744001"
+    ​ width="100%" height="750">
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>

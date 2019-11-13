@@ -2,6 +2,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
+var mailer = require('mailer');
 var initializePassport = require('./passport-config');
 var bcrpt = require('bcrypt');
 // Open Server

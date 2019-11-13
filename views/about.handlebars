@@ -1,6 +1,3 @@
-<h2>car!</h2>
-
-
 <div class="container section scrollspy" id="themes">
     <div class="section">
         <div id="overflowTest">
@@ -8,12 +5,12 @@
             {{#each cars}}
 
 
-            <table >
+            <table>
                 <tr>
                     <td>
                         <img class="someClass" src="{{photo}}" width="400" height="400">
-                     
-                      
+
+
                     </td>
                     <td>
                         <table class="striped">
@@ -55,8 +52,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a class="waves-effect waves-light btn"
-                                        href="https://www.{{make}}.com/?search={{model}}">For Sales</a>
+                                    <a class="waves-effect waves-light btn" href="https://www.{{make}}.com">For
+                                        Sales</a>
                                 </td>
 
                             </tr>
@@ -72,9 +69,9 @@
                 </td>
                 </tr>
 
-            </table> 
+            </table>
 
-            {{comment}}
+            {{!-- {{comment}}
 <form  action="/add/comment" method="POST">
 
                              <div class="input-field col s6">
@@ -85,12 +82,26 @@
 
 
                            <button class="waves-effect waves-light btn" type="submit">Add car</button>
-                        </form>
+                        </form> --}}
 
             {{/each}}
-            
 
-  
+
+
+            <div class="container">
+                <form action="https://formspree.io/zaid.fadel89@yahoo.com" method="POST">
+                    <label for="email">Email</label>
+                    <input type="text" class="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" class="subject" name="subject">
+
+                    <label for="message">Message
+                        <textarea class="message" name="message" style="height:200px"></textarea></label>
+                    <div class="status"></div>
+                    <button type="subnits" class="subnits waves-effect waves-light btn">send </button>
+                </form>
+            </div>
         </div>
     </div>
 </div>

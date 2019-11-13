@@ -2,8 +2,6 @@
 var orm = require('../config/orm.js');
 
 var premiere = {
-  
-
   selectAllinf: function(cb) {
     orm.selectAllinf(function(res) {
       cb(res);
@@ -40,17 +38,25 @@ var premiere = {
     orm.create('user', cols, vals, function(res) {
       cb(res);
     });
-  }
+  },
   // insertDealer: function(all, cb) {
   //   orm.insertDealer( all, function(res) {
   //     cb(res);
   //   });
   // }
   createcar: function(cols, vals, cb) {
-    orm.createcar("cars", cols, vals, function(res) {
+    orm.createcar('cars', cols, vals, function(res) {
       cb(res);
     });
   },
+  
+  create: function(cols, vals, cb) {
+    orm.create('user', cols, vals, function(res) {
+      cb(res);
+    });
+  }
+
+  
 
 };
 module.exports = premiere;
